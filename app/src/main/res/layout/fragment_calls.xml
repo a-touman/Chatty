@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CallsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Voice Chats"
+        android:textAlignment="center" />
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_gravity="bottom"
+
+
+        >
+
+        <ImageView
+            android:id="@+id/callfragicon_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:paddingHorizontal="30dp"
+            android:src="@drawable/callfragicon"
+
+            />
+
+        <ImageView
+            android:id="@+id/callfragmore_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:paddingEnd="30dp"
+            android:src="@drawable/dots"
+            android:paddingRight="30dp" />
+
+        <ImageView
+            android:id="@+id/callfragxtxt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/voiceicon" />
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/voicefragmentRecyclerView_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|top"
+        android:layout_marginBottom="75dp"
+        android:scrollbars="vertical"
+
+        />
+
+
+
+
+
+
+</FrameLayout>

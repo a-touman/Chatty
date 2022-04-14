@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+    <EditText
+        android:id="@+id/searchFragSearchField"
+        android:layout_width="322dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center|top"
+        android:layout_marginVertical="30dp"
+        android:background="@drawable/field_looks"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:ems="10"
+        android:fontFamily="@font/muli"
+        android:hint="   Search..."
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.397"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_gravity="bottom"
+
+
+        >
+
+        <ImageView
+            android:id="@+id/searchfragicon_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:paddingHorizontal="30dp"
+
+            android:src="@drawable/searchfragicon" />
+
+        <ImageView
+            android:id="@+id/searchfragmore_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:paddingEnd="30dp"
+            android:src="@drawable/dots"
+            android:paddingRight="30dp" />
+
+        <ImageView
+            android:id="@+id/searchfragxtxt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/searchtxt" />
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchfragmentRecyclerView_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="75dp"
+        android:scrollbars="vertical"
+
+        />
+
+
+</FrameLayout>

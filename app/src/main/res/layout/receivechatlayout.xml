@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    android:padding="2dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/layoutformessage_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/receiverchatdrawable"
+        tools:ignore="RtlCompat">
+
+        <TextView
+            android:id="@+id/sendermessage_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="200dp"
+            android:fontFamily="@font/muli"
+            android:paddingLeft="10dp"
+            android:paddingTop="7dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="7dp"
+            android:text="Sender Message is Here "
+            android:textColor="#0F1828"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/timeofmessage_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/sendermessage_id"
+            android:layout_toRightOf="@id/sendermessage_id"
+            android:padding="5dp"
+            android:text="00:00"
+            android:textColor="@color/black"
+            android:textSize="8sp" />
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

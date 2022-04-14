@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:padding="2dp">
+
+    <RelativeLayout
+        android:id="@+id/layoutformessage_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/receiverchatdrawable"
+        tools:ignore="RtlCompat">
+
+        <me.jagar.chatvoiceplayerlibrary.VoicePlayerView
+            android:id="@+id/voicePlayerView_id"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            app:enableVisualizer="true"
+            app:playPauseBackgroundColor="#ED749D"
+            app:playPauseCornerRadius="100"
+            app:playProgressbarColor="#F44336"
+            app:progressTimeColor="#000"
+            app:seekBarProgressColor="#000"
+            app:seekBarThumbColor="#03A9F4"
+            app:shareBackgroundColor="#FFFFFF"
+            app:shareCornerRadius="100"
+            app:shareText="SHARE ME"
+            app:showShareButton="false"
+            app:showTiming="true"
+            app:timingBackgroundColor="#ED749D"
+            app:viewBackground="#002DE3"
+            app:viewCornerRadius="100"
+            app:visualizationNotPlayedColor="#4E0202"
+            app:visualizationPlayedColor="#FF5722" />
+
+
+        <TextView
+            android:id="@+id/timeofmessage_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/voicePlayerView_id"
+            android:layout_toRightOf="@id/voicePlayerView_id"
+            android:padding="5dp"
+            android:text="00:00"
+            android:textColor="@color/black"
+            android:textSize="8sp" />
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
